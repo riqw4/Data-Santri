@@ -1,0 +1,134 @@
+html {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px;
+    height: 100%;
+}
+
+.cari{
+    display: inline;
+}
+
+.container-add{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.container-add label{
+    margin: 10px 0;
+    width: 100px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.container-add button{
+    margin: 10px;
+}
+
+.form-group{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.form-radio{
+    display: contents;
+    flex-direction: column;
+}
+
+@media (max-width: 900px){
+    .form-radio{
+        display: flex;
+    }
+}
+ 
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.4);
+    background-color: #ffa221; */
+    color : #000;
+    border-radius: 25px;
+    width: 53%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 65px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.4);
+    background-color: #ffa221; */
+    color : #000;
+    border-radius: 25px;
+    width: 53%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 55px;
+    text-align: center;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    width: 75%;
+    border: 1px solid #d17839;
+    border-radius: 10px;
+}
+
+select{
+    display: flex;
+    align-items: center;
+    width: 78%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button {
+    padding: 10px;
+    width: 100px;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-size: 300% auto;
+    transition: background-position 0.5s;
+}
+
+.button:hover {
+    background-position: right center; /* Move the gradient */
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
